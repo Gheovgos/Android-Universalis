@@ -41,7 +41,9 @@ Paradox titles can be divided into three macro categories: Europa Engine (from t
 
 WIP
 
-# Loading Times
+# Paradox Launcher
+
+# Modding & Loading Times
 
 # Winlator Settings (FEX, Box64)
 
