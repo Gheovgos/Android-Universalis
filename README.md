@@ -12,8 +12,17 @@ Unfortunately, it is currently difficult to run Paradox titles in the Linux vers
 Furthermore, with Android 16, it is theoretically possible to run Linux programs natively on Android. However, it does not work on all devices: for example, a limitation has been placed on this feature on Samsung phones, and there is currently no way to circumvent it (November 2025).
 
 # Useful Links
-For [Winlator Cmod](https://github.com/coffincolors/winlator)
+[Winlator Cmod](https://github.com/coffincolors/winlator)
 
-For [WCPs](https://github.com/Arihany/WinlatorWCPHub)
+[7zip](https://7-zip.org/download.html)
 
-WIP
+[WCPs](https://github.com/Arihany/WinlatorWCPHub) 
+WCPs are add-ons that can be installed via Winlator. They may contain different versions of FEX, Box64, DXVK, and so on.
+
+[AdrenoToolsDriver](https://github.com/K11MCH1/AdrenoToolsDrivers)
+It contains drivers for Qualcomm users. You can install them via Winlator
+
+[UniversalChecksumPatcher](https://github.com/IlliaYalovoi/universal-checksum-patcher) 
+A universal tool (EU4, HOI4, and EU5) for patching the main executable. Essentially, it prevents the checksum calculation from being verified during loading.
+
+# General Tips
