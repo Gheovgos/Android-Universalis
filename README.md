@@ -32,6 +32,10 @@ A universal tool (EU4, HOI4, and EU5) for patching the main executable. Essentia
 [Project-Alice](https://github.com/schombert/Project-Alice) 
 Project Alice is an open source engine reimplementation of Victoria II engine.
 
+[Comet](https://github.com/imLinguin/comet?tab=readme-ov-file)
+
+[Heroic](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher)
+
 # General Tips
 
 This section contains general advice that is independent of the game you want to emulate. First of all, although it is considered unnecessary, I strongly recommend using virtual RAM (on some devices this option is called RAM+ or something similar). Enabling this option can prevent OOM crashes and, in my experience, has greatly helped in running more demanding titles (for example, HOI4 was very unstable in my case. Enabling 8GB of virtual RAM made it perfectly playable).
@@ -50,3 +54,25 @@ WIP
 # Game Specific Settings
 
 # Multiplayer and achievements
+
+It is possible to unlock achievements and play multiplayer, although the configuration is quite lengthy (for now, I have only tested it with the GOG versions. It should also be possible with Steam through emulators such as GameHub and GameNative).
+
+
+First of all, you need to have:
+
+1. The version of the game downloaded via GOG (the “offline” version is fine)
+2. Comet
+3. Heroic configuration file
+
+Heroic is an alternative launcher for GOG and Epic Games, but it doesn't currently work on Winlator. But you don't need to launch it: you actually need to find and zip the “heroic” folder located in AppData/Roaming. At the moment, you will need an external computer, run heroic at least once, and then log in to obtain this folder, but I think I will upload the customizable heroic folder to this repository in the future. Once you have copied and pasted the “heroic” folder in C:\users\x-user\AppData\Roaming into the container, you need to download the comet.exe. Then, open the Windows cmd and run this command:
+
+`comet.exe --from-heroic --username YOUR_USERNAME`
+
+Finally, launch the game exe.
+At the moment, only tested with EU4.
+
+
+With the GOG version installed, you can also connect to a server and play multiplayer. I haven't tested this yet, though. 
+Note that you can also run comet in other ways by providing the access token. Unfortunately, I haven't found any other ways to do this, so the “heroic” solution seems to be the fastest and easiest. If I find any, I'll let you know here.
+
+# Thanks
