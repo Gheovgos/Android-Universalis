@@ -50,7 +50,7 @@ A general benefit, valid for everyone, is to move the game to the C:\ drive: thi
 
 To further reduce loading times (only valid for the second engine), you can zip the vanilla content and treat it as a mod (this was a suggestion found on the Paradox forum for CK2; I can no longer find the original source, but it seems to be valid for all Clausewitz Engine titles). Below is a short guide on how to set this up.
 
-Using 7zip (or another similar tool), zip the following folders from a title of your choice: common, decisions, events, history, interface, localisation, map (the zipped file must NOT contain any roots). You can then use the .mod file from this repository as a template, as long as it contains the name of your zip file (I use vanilla as the name). Finally, to load it, go to Documents\Paradox Interactive\ Your Game\ create the “mod” folder and insert both the .mod file and the .zip file, while outside (inside \Your Game\) insert the dlc_load.json file and insert the name of the .mod file of your choice in “enabled_mods”, also inserting the name of the parent folder. You can find a sample file in this repository. Some titles (such as EU3) also support loading the mod via command line: just run
+Using 7zip (or another similar tool), zip the following folders from a title of your choice: common, decisions, events, history, interface, localisation, map (the zipped file must NOT contain any roots). You can then use the .mod file from this repository as a template, as long as it contains the name of your zip file (I use vanilla as the name). Finally, to load it, go to Documents\Paradox Interactive\YourGame\ create the “mod” folder and insert both the .mod file and the .zip file, while outside (inside \Your Game\) insert the dlc_load.json file and insert the name of the .mod file of your choice in “enabled_mods”, also inserting the name of the parent folder. You can find a sample file in this repository. Some titles (such as EU3) also support loading the mod via command line: just run
 ```
 eu3.exe --mod ModName.mod
 ```
@@ -58,7 +58,11 @@ to load it.
 
 # Paradox Launcher
 
-# Modding & Loading Times
+At present, the official launcher does not run completely. The only way to try to start it is to modify the settings contained in the launcher-settings.json file and remove the exe parameters (last record of the file, in exeArgs). This allows you to start the launcher, but in my experience, I have never achieved anything concrete. The installer also does not seem to work properly.
+
+# Modding
+
+As for modding, the process is very similar to the “Vanilla” mod described in the previous two sections: simply place the zipped file/mod folder and the corresponding file in the Documents\Paradox Interactive\YourGame\mod folder, then enter the name of the .mod file in dlc_load.json, at least as far as the Clausewitz Engine is concerned. For the Europa Engine, just find the settings.txt file and explicitly declare the mod you want to load. The game usually comes with lots of useful and self-explanatory readme files. I have not tried yet with new engine
 
 # Winlator Settings (FEX, Box64)
 
