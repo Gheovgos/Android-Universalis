@@ -43,7 +43,12 @@ This section contains general advice that is independent of the game you want to
 
 Paradox titles can be divided into three macro categories: Europa Engine (from the first Europa Universalis to Hearts of Iron II/Darkest Hour, circa 2000-2005), Clausewitz Engine (from Europa Universalis 3 to Hearts of Iron IV, approximately 2007-2016), Improved Clausewitz (from Imperator: Rome to Europa Universalis 5, 2019-present). You can get full list [here](https://en.wikipedia.org/wiki/Paradox_Development_Studio#Game_engines)
 
-WIP
+Europa Engine will probably not start on the first attempt. This is because only 16-bit colors are supported: to get around this problem, you need to use CnC-DDraw (slow) as the Glide Wrapper. At the moment, I am not aware of any other solutions. Otherwise, it should work fine.
+The second engine, on the other hand, works without any special modifications. It supports the use of different DirectX versions (at least for HOI4 and EU4), supports command line arguments, and mods as zipped files. Finally, the last one should be an improvement but heavier to run, but I have not tested it much yet (only with Imperator Rome). 
+
+A general benefit, valid for everyone, is to move the game to the C:\ drive: this significantly reduces loading times
+
+To further reduce loading times (only valid for the second engine), you can zip the vanilla content and treat it as a mod (this was a suggestion found on the Paradox forum for CK2; I can no longer find the original source, but it seems to be valid for all Clausewitz Engine titles). Below is a short guide on how to set this up.
 
 # Paradox Launcher
 
