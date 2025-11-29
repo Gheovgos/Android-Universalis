@@ -50,6 +50,12 @@ A general benefit, valid for everyone, is to move the game to the C:\ drive: thi
 
 To further reduce loading times (only valid for the second engine), you can zip the vanilla content and treat it as a mod (this was a suggestion found on the Paradox forum for CK2; I can no longer find the original source, but it seems to be valid for all Clausewitz Engine titles). Below is a short guide on how to set this up.
 
+Using 7zip (or another similar tool), zip the following folders from a title of your choice: common, decisions, events, history, interface, localisation, map (the zipped file must NOT contain any roots). You can then use the .mod file from this repository as a template, as long as it contains the name of your zip file (I use vanilla as the name). Finally, to load it, go to Documents\Paradox Interactive\ Your Game\ create the “mod” folder and insert both the .mod file and the .zip file, while outside (inside \Your Game\) insert the dlc_load.json file and insert the name of the .mod file of your choice in “enabled_mods”, also inserting the name of the parent folder. You can find a sample file in this repository. Some titles (such as EU3) also support loading the mod via command line: just run
+```
+eu3.exe --mod ModName.mod
+```
+to load it.
+
 # Paradox Launcher
 
 # Modding & Loading Times
