@@ -66,6 +66,20 @@ As for modding, the process is very similar to the “Vanilla” mod described i
 
 # Winlator Settings (FEX, Box64)
 
+Winlator provides two layers: box64 and FEX. The first is a well-established tool and should work in most cases. It is also recommended for those with sufficiently powerful chips. FEX, on the other hand, is more experimental but, on paper, should reduce CPU overhead (an important factor, given that Paradox titles are primarily CPU-intensive). In my experience, all the titles I have tested (EU3, Vic2, HOI4, HOI2DH, CK2, MotE, EU4, Imperator) work better on BOX64, with the exception of EU4, which works almost identically on both. My advice is to create two separate containers, one with FEX and one with BOX, because once you create a container with a specific translation layer, you cannot change it; you have to create it from scratch. At the moment, Winlator does not support a preset for FEX, but I have uploaded 3 presets for BOX64. Below is a brief description of each one:
+1. “Paradox Battery” is a preset that aims to achieve a better compromise between battery life and performance. Loading times will be longer (about 25-30% longer. In my tests, loading time went from 2 minutes to 2:30), but battery consumption should be lower. The most similar preset is “Stability,” which is the default in Winlator.
+2. “Paradox” is a preset that seeks a balance between performance and battery life. Loading times will be shorter but battery consumption will be higher. Similar to the “Performance” preset.
+3. “Paradox Performance” is the preset that aims for maximum performance. It is also much more unstable, but you should get the most out of the moment.
+
+However, one variable to consider is BOX64_BIGBLOCK: I have noticed that values >1 make the game very unstable, causing sudden crashes (in particular, the Paradox crash manager appears).
+
+Furthermore, from version bo>0.3.8 onwards, it is possible to use DYNACACHE: on paper, it should offer superior performance because the code already generated is stored on the disk and therefore read at the next startup and not generated again. I have tested it and it seems to offer a slight improvement, especially in loading. It is disabled by default, so you need to use these two variables: 
+```
+BOX64_DYNACACHE_FOLDER=path/to/cache
+BOX64_DYNACACHE=1
+```
+However, I have noticed that it is quite unstable on the second start (when it attempts to read), but this can be resolved by deleting the cache folder and regenerating it.
+
 # Game Specific Settings
 
 # Multiplayer and achievements
