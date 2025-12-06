@@ -1,0 +1,1 @@
+wscript.exe //B "C:\PATH\TO\SCRIPT\comet.vbs"
