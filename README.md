@@ -85,7 +85,7 @@ Heroic is an alternative launcher for GOG and Epic Games, but it doesn't current
 
 Finally, launch the game exe.
 At the moment, only tested with EU4.
-
+To create a shortcut that automatically launches comet, simply create the shortcut as normal (right click on your .exe, then create shortcut, while you are in your container). Then, in the app settings, select “Use secondary Executable,” indicate the path to “comet.bat” (note: the path to the .vbs script must be specified within the bat file; this script must be placed together with comet.exe in the game folder). Also, I noticed that Winlator cannot locate the second executable file within the C: drive, so I recommend placing it in D:. I don't know if it also works with Z: and E:), indicate the delay time (with 0 it will not start, any other integer value will, 5 ms should be fine) and you're done. You should now be able to run the game + comet and unlock the related achievements.
 
 With the GOG version installed, you can also connect to a server and play multiplayer. I haven't tested this yet, though. 
 Note that you can also run comet in other ways by providing the access token. Unfortunately, I haven't found any other ways to do this, so the “heroic” solution seems to be the fastest and easiest. If I find any, I'll let you know here.
